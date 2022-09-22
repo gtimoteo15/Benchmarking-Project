@@ -1,15 +1,15 @@
 #!/bin/bash
-g++ -o getProtocols getProtocols.c
-g++ -o socketpairLatency socketpairLatency.c
-g++ -o socketpairThroughput socketpairThroughput.c
-g++ -o tcpClient tcpClient.c
-g++ -o tcpServer tcpServer.c
-g++ -o udpClient udpClient.c
-g++  -o udpServer udpServer.c
+gcc -o getProtocols getProtocols.c
+gcc -o socketpairLatency socketpairLatency.c
+gcc -o socketpairThroughput socketpairThroughput.c
+gcc -o tcpClient tcpClient.c
+gcc -o tcpServer tcpServer.c
+gcc -o udpClient udpClient.c
+gcc  -o udpServer udpServer.c
 
-rm ../data/socketpair*
-rm ../data/tcp*
-rm ../data/udp*
+#rm ../data/socketpair*
+#rm ../data/tcp*
+#rm ../data/udp*
 
 
 for size in 4 16 64 256 1024 4096 16384 65536 262144 524288
