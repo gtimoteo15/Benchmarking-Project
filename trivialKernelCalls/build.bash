@@ -1,8 +1,8 @@
 #!/bin/bash
-g++ -o getpidBenchmark getpidBenchmark.c
-g++ -o getcurrentdirnameBenchmark getcurrentdirnameBenchmark.c
-g++ -o getcpuBenchmark getcpuBenchmark.c
+gcc -o getpidBenchmark getpidBenchmark.c
+gcc -o getcurrentdirnameBenchmark getcurrentdirnameBenchmark.c
+#gcc -o getcpuBenchmark getcpuBenchmark.c
 
 ./getpidBenchmark > ../data/getpid.csv
 ./getcurrentdirnameBenchmark > ../data/getcurrentdirnameBenchmark.csv
-./getcpuBenchmark > ../data/getcpuBenchmark.csv
+#./getcpuBenchmark > ../data/getcpuBenchmark.csv
